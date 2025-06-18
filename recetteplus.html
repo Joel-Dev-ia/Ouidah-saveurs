@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saveurs de Ouidah - Cuisine Traditionnelle Béninoise</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="recette.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <a href="index.html#home">
+                <span class="text-xl font-bold text-orange-600">Saveurs de Ouidah</span>
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html#home" class="nav-link text-black hover:text-orange-600">Accueil</a>
+                <a href="index.html#recipes" class="nav-link text-black hover:text-orange-600">Recettes</a>
+                <a href="index.html#about" class="nav-link text-black hover:text-orange-600">À propos</a>
+                <a href="index.html#contact" class="nav-link text-black hover:text-orange-600">Contact</a>
+            </div>
+            <button class="md:hidden text-gray-700" id="mobile-menu-button">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-white py-2 px-4" id="mobile-menu">
+            <a href="index.html#home" class="block py-2 text-gray-700 hover:text-orange-600">Accueil</a>
+            <a href="index.html#recipes" class="block py-2 text-gray-700 hover:text-orange-600">Recettes</a>
+            <a href="index.html#about" class="block py-2 text-gray-700 hover:text-orange-600">À propos</a>
+            <a href="index.html#contact" class="block py-2 text-gray-700 hover:text-orange-600">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- Recipes Section -->
+    <section id="recipes" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Nos Recettes Traditionnelles</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="recipes-container">
+                <!-- Recipes will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe Modal -->
+    <div class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4" id="recipe-modal">
+        <div class="bg-white rounded-xl max-w-4xl w-full max-h-screen overflow-y-auto">
+            <div class="relative">
+                <button class="absolute top-4 right-4 bg-white rounded-full p-2 shadow-md hover:bg-gray-100" id="close-modal">
+                    <i class="fas fa-times text-gray-700"></i>
+                </button>
+                <div id="modal-content">
+                    <!-- Content will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-orange-600">Saveurs de Ouidah</h3>
+                    <p>Partageons ensemble les trésors culinaires de la région de Ouidah, Bénin.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-orange-400 transition">Accueil</a></li>
+                        <li><a href="#recipes" class="hover:text-orange-400 transition">Recettes</a></li>
+                        <li><a href="#about" class="hover:text-orange-400 transition">À propos</a></li>
+                        <li><a href="#contact" class="hover:text-orange-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Recettes populaires</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-orange-400 transition">Akassa</a></li>
+                        <li><a href="#" class="hover:text-orange-400 transition">Amiwo</a></li>
+                        <li><a href="#" class="hover:text-orange-400 transition">Gari Foto</a></li>
+                        <li><a href="#" class="hover:text-orange-400 transition">Sauce Gombo</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Suivez-nous</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-orange-400 transition"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-orange-400 transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-orange-400 transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-2xl hover:text-orange-400 transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2023 Saveurs de Ouidah. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="recetteplus.js"></script>
+</body>
+</html>

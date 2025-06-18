@@ -1,0 +1,9 @@
+# Ignorer le fichier des variables d'environnement
+.env
+
+# Ignorer le dossier des dépendances
+node_modules/
+
+# Ignorer les fichiers de build ou temporaires (si applicable)
+*.log
+*.tmp

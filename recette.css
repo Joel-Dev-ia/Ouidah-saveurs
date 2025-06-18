@@ -1,0 +1,47 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f4e9;
+            color: #000000;
+        }
+        
+        .hero-gradient {
+    background: 
+        /* Dégradé coloré avec transparence (ajustez 0.7 pour l'opacité) */
+        linear-gradient(135deg, rgba(117, 110, 93, 0.7) 0%, rgba(31, 31, 31, 0.7) 100%),
+        /* Image de fond */
+        url('./images/679b8cbbfd2e9655c387e8e867001791.jpg') center/cover no-repeat;
+}
+        .dish-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .step-checkbox:checked + .step-text {
+            text-decoration: line-through;
+            color: #888;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #f8961e;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .carousel-item {
+            transition: transform 0.5s ease;
+        }
